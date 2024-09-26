@@ -13,9 +13,10 @@
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.1",
-    "postman-request": "^2.88.1-postman.22"
+    "postman-request": "^2.88.1-postman.22",
+    "tough-cookie": "^5.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^3.1.7"
   }
 }
