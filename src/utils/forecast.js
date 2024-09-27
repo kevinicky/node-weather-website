@@ -1,8 +1,9 @@
+require('dotenv').config()
 const axios = require('axios')
 
 const forecast = async (latitude, longitude, callback) => {
 
-    const url = 'http://api.weatherstack.com/current?access_key=bc9428fddb73c834e2c86c73955cefbb&query=' + latitude + ',' + longitude
+    const url = 'http://api.weatherstack.com/current?access_key=' + process.env.WEATHERSTACK_ACCESS_TOKEN + '&query=' + latitude + ',' + longitude
 
     try {
         const response = await axios.get(url)
